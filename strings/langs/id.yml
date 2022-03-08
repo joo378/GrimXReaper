@@ -228,7 +228,7 @@ stream_4 : " 📡 **Memulai Streaming** 💡\n\n**🔗 Judul:** [{0}]({1})\n⌛*
 #Tombol Umum
 CLOSE_BUTTON : "🗑 Tutup "
 CLOSEMENU_BUTTON : "🗑 Tutup Menu"
-BACK_BUTTON : "⬅ Kembali"
+BACK_BUTTON : "❮ Kembali"
 UNBAN_BUTTON : "🗑 Unban Asisten"
 
 #Lirik
@@ -265,7 +265,6 @@ P_B_4 : "🎵 Daftar Yang Di Putar"
 #Daftar Putar
 PL_B_1 : "🚀 Daftar Di Putar"
 PL_B_2 : "✚ Daftar Putar"
-PL_B_3 : "✚ Tambahan"
 PL_B_4 : "📡 Mode Putar"
 PL_B_5 : "🔄 Hapus Seluruh Daftar Putar"
 PL_B_6 : "↗️ Hapus Daftar Putar"
@@ -325,8 +324,8 @@ sudo_1 : "{0} sudah menjadi pengguna sudo."
 sudo_2 : "Ditambahkan **{0}** ke Pengguna Sudo."
 sudo_3 : "Bukan bagian dari Sudo Bot."
 sudo_4 : "Dihapus dari Pengguna Sudo Bot"
-sudo_5 : "⭐️<u> **Pemilik:** </u>\n"
-sudo_6 : "\n⭐<u> **Pengguna Sudo:** </u>\n"
+sudo_5 : "👮<u> **Pemilik:** </u>\n"
+sudo_6 : "\n🕵<u> **Pengguna Sudo:** </u>\n"
 sudo_7 : "Tidak Ada Pengguna Sudo"
 
 #Memblokir
