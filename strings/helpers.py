@@ -3,12 +3,12 @@ HELP_1 = """✅<u>**Perintah Admin:**</u>
 **c** Singkatan dari Channel Play.
 
 /pause atau /cpause - Jeda musik bermain.
-/resume atau /cresume- Lanjutkan musik yang dijeda.
-/mute atau /cmute- Bisukan musik yang diputar.
-/unmute atau /cunmute- Suarakan musik yang dibisukan.
-/skip atau /cskip- Lewati musik yang sedang diputar.
-/stop atau /cstop- Hentikan pemutaran musik.
-/shuffle atau /cshuffle- Secara acak mengacak daftar putar yang antri.
+/resume atau /cresume - Lanjutkan musik yang dijeda.
+/mute atau /cmute - Bisukan musik yang diputar.
+/unmute atau /cunmute - Suarakan musik yang dibisukan.
+/skip atau /cskip - Lewati musik yang sedang diputar.
+/stop atau /cstop - Hentikan pemutaran musik.
+/shuffle atau /cshuffle - Secara acak mengacak daftar putar yang antri.
 
 ✅<u>**Specifik Melewatkan:**</u>
 /skip or /cskip [Nomor(Contoh: 3)] 
