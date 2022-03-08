@@ -3,15 +3,7 @@
     "description": "Telegram Group Calls streaming bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.",
     "repository": "https://github.com/Kayzyu/KayXMusic",
     "logo": "https://telegra.ph/file/c9aaa511a63d6ad617856.jpg",
-    "keywords": [
-    "python3",
-    "telegram",
-    "bot",
-    "Kayzyu",
-    "KayXMusic",
-    "telegram-bot",
-    "pyrogram"
-    ],
+    "keywords": ["python3", "telegram", "bot", "Kayzyu", "KayXMusic", "telegram-bot", "pyrogram"],
     "stack": "container",
     "env": {
       "API_ID": {
@@ -93,8 +85,8 @@
         "description": "Isi dengan username channel Contoh: https://t.me/",
         "value": "",
         "required": true
-      },
-    }
+      }
+    },
     "buildpacks": [
           {
               "url": "heroku/python"
