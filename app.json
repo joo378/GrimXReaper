@@ -77,6 +77,21 @@
         "description": "Nama branch repo",
         "value": "main",
         "required": true
+      },
+      "GITHUB_REPO": {
+       "description": "Repositori",
+       "value": "https://github.com/Kayzyu/KayXMusic",
+       "required": true
+      },
+      "SUPPORT_GROUP": {
+       "description": "Link grup support anda",
+       "value": "https://t.me/KayzuSupport",
+       "required": true
+      },
+      "SUPPORT_CHANNEL": {
+       "description": "Link channel anda kalo ada",
+       "value": "https://t.me/kayzuchannel",
+       "required": true
       }
     },
     "buildpacks": [
