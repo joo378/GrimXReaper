@@ -1,4 +1,10 @@
 import asyncio
+import importlib
+import sys
+
+from pyrogram import idle
+from pytgcalls.exceptions import NoActiveGroupCall
+
 import config
 from config import BANNED_USERS
 from XMusic import LOGGER, app, userbot
