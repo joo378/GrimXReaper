@@ -86,12 +86,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Isi dengan username group Contoh: https://t.me/",
-        "value": "https://t.me/KayzuSupport",
+        "value": "",
         "required": true
       },
       "SUPPORT_CHANNEL": {
-        "description": "Isi dengan username channel Contoh https://t.me/",
-        "value": "https://t.me/kayzuchannel",
+        "description": "Isi dengan username channel Contoh: https://t.me/",
+        "value": "",
         "required": true
       },
     }
