@@ -1,4 +1,5 @@
 .env
+.chache
 Kaylogs.txt
 .DS_Store
 *.session
