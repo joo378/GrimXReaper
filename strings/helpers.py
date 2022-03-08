@@ -1,4 +1,4 @@
-HELP_1 = """✅**<u>Perintah Admin:</u>**
+HELP_1 = """✅<u>**Perintah Admin:**</u>
 
 **c** Singkatan dari Channel Play.
 
@@ -38,7 +38,7 @@ HELP_2 = """✅<u>**Perintah Play:**</u>
 /channelplay [Nama pengguna atau id obrolan] atau [Nonaktifkan] - Hubungkan Channel ke grup dan streaming musik di obrolan suara Channel dari grup Anda.
 
 
-✅**<u>Playlists Server Bot:</u>**
+✅<u>**Playlists Server Bot:**</u>
 /playlist  - Cek Playlist yang tersimpan di Server.
 /deleteplaylist - Hapus semua musik yang tersimpan di daftar putar Anda.
 /play  - Mulai mainkan Playlist Tersimpan Anda dari Server."""
@@ -141,7 +141,7 @@ HELP_5 = """🔰**<u>Tambahkan & Hapus pengguna sudo :</u>**
 🌐**<u>BROADCAST FUNCTION:</u>**
 /broadcast [Pesan atau balas ke pesan] - Siarkan pesan apa pun ke Obrolan yang Dilayani Bot.
 
-<u>options for broadcast:</u>
+<u>**pengaturan untuk broadcast:**</u>
 **-pin** : Ini akan menyematkan pesan Anda 
 **-pinloud** : Ini akan menyematkan pesan Anda dengan pemberitahuan keras
 **-user** : Ini akan menyiarkan pesan Anda ke pengguna yang telah memulai bot Anda.
