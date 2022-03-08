@@ -84,16 +84,16 @@
        "required": true
       },
       "SUPPORT_GROUP": {
-       "description": "Link grup support anda",
-       "value": "https://t.me/KayzuSupport",
-       "required": true
+        "description": "Isi dengan username group Contoh: https://t.me/",
+        "value": "https://t.me/KayzuSupport",
+        "required": true
       },
       "SUPPORT_CHANNEL": {
-       "description": "Link channel anda kalo ada",
-       "value": "https://t.me/kayzuchannel",
-       "required": true
-      }
-    },
+        "description": "Isi dengan username channel Contoh https://t.me/",
+        "value": "https://t.me/kayzuchannel",
+        "required": true
+      },
+    }
     "buildpacks": [
           {
               "url": "heroku/python"
