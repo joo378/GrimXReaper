@@ -5,7 +5,7 @@ from config import BANNED_USERS
 from strings import get_command
 from XMusic import app
 from XMusic.core.call import XMusic
-from YukkiMusic.utils.decorators import AdminRightsCheck
+from XMusic.utils.decorators import AdminRightsCheck
 
 # Commands
 STOP_COMMAND = get_command("STOP_COMMAND")
