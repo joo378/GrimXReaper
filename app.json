@@ -71,9 +71,9 @@
         "value": "main",
         "required": true
       },
-      "GITHUB_REPO": {
-       "description": "Repositori",
-       "value": "https://github.com/Kayzyu/KayXMusic",
+      "DURATION_LIMIT": {
+       "description": "Durasi waktu pemutaran Contoh: 60",
+       "value": "",
        "required": true
       },
       "SUPPORT_GROUP": {
