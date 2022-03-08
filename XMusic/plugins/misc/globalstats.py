@@ -1,3 +1,7 @@
+import platform
+from sys import version as pyver
+from typing import Union
+
 import psutil
 from pyrogram import __version__ as pyrover
 from pyrogram import filters, types
