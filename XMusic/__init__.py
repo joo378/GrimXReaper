@@ -1,4 +1,4 @@
-from XMusic.core.bot import XMusicBot
+from XMusic.core.bot import XBot
 from XMusic.core.dir import dirr
 from XMusic.core.git import git
 from XMusic.core.userbot import Userbot
@@ -22,7 +22,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = XMusicBot()
+app = XBot()
 
 # Assistant Client
 userbot = Userbot()
