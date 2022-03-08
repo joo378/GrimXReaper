@@ -5,7 +5,7 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, 
                             InputMediaPhoto,
                             Message)
-from YukkiMusic.utils.channelplay import get_channeplayCB
+from XMusic.utils.channelplay import get_channeplayCB
 
 import config
 from config import BANNED_USERS, lyrical
