@@ -1,5 +1,6 @@
 from pyrogram.types import InlineKeyboardButton
 
+from config import SUPPORT_CHANNEL, SUPPORT_GROUP
 
 def track_markup(_, videoid, user_id, channel):
     buttons = [
