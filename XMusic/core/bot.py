@@ -41,4 +41,4 @@ class XBot(Client):
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"XBot Started as {self.name}")
+        LOGGER(__name__).info(f"Music Bot Started as {self.name}")
