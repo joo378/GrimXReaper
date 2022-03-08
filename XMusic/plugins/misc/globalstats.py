@@ -6,8 +6,7 @@ import psutil
 from pyrogram import __version__ as pyrover
 from pyrogram import filters, types
 from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, 
-                            InputMediaPhoto)
+                            InlineKeyboardMarkup, InputMediaPhoto)
 
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
@@ -17,10 +16,10 @@ from XMusic.core.userbot import assistants
 from XMusic.misc import SUDOERS, pymongodb
 from XMusic.utils.database import (get_global_tops, get_lang,
                                    get_particulars, get_queries,
-                                   get_served_chats, get_sudoers,
-                                   get_top_chats, get_served_users,
-                                   get_topp_users, is_commanddelete_on)
-                                   
+                                   get_served_chats,
+                                   get_served_users, get_sudoers,
+                                   get_top_chats, get_topp_users,
+                                   is_commanddelete_on)
 from XMusic.utils.decorators.language import languageCB
 from XMusic.utils.inline.stats import (back_stats_markup,
                                        overallback_stats_markup,
