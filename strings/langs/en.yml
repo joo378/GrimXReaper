@@ -228,7 +228,7 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️
 #General Buttons
 CLOSE_BUTTON  : "🗑 Close"
 CLOSEMENU_BUTTON  : "🗑 Close Menu"
-BACK_BUTTON : "⬅ Back"
+BACK_BUTTON : "❮ Back"
 UNBAN_BUTTON : "🗑 Unban Assistant"
 
 #Lyrics
@@ -265,7 +265,6 @@ P_B_4 : "🎵 Play Playlist"
 #Playlist
 PL_B_1 : "🚀 Play Playlist"
 PL_B_2 : "✚ Playlists"
-PL_B_3 : "✚ Additional"
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
@@ -325,12 +324,12 @@ sudo_1 : "{0} is already a sudo user."
 sudo_2 : "Added **{0}** to Sudo Users." 
 sudo_3 : "Not a part of Bot's Sudo."
 sudo_4 : "Removed from Bot's Sudo User"
-sudo_5 : "⭐️<u> **Owners:**</u>\n"
-sudo_6 : "\n⭐️<u> **Sudo Users:**</u>\n"
+sudo_5 : "👮<u> **Owners:**</u>\n"
+sudo_6 : "\n🕵<u> **Sudo Users:**</u>\n"
 sudo_7 : "No Sudo Users"
 
 #Block
-block_1 : "{0} is already blocked from the bot."
+block_1 : "{0} Is already blocked from the bot."
 block_2 : "Added **{0}** to Block List of bot. User won't be able to use bot now under any condition.\n\nCheck blocked users: /blockedusers"
 block_3 : "User is already free and not blocked."
 block_4 : "Removed User from the block list. User will be able to use bot now."
