@@ -62,11 +62,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|a|{channel}",
+                callback_data=f"XMusicPlaylists {videoid}|{user_id}|{ptype}|a|{channel}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|v|{channel}",
+                callback_data=f"XMusicPlaylists {videoid}|{user_id}|{ptype}|v|{channel}",
             ),
         ],
         [
