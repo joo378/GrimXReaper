@@ -33,7 +33,7 @@ auth_4 : "Dihapus dari Daftar Pengguna Resmi Grup ini."
 auth_5 : "Pengguna yang ditargetkan bukanlah Pengguna yang Sah."
 auth_6 : "Mengambil Pengguna Resmi... Harap Tunggu"
 auth_7 : "**Daftar Pengguna Resmi[AUL]:**\n\n"
-auth_8 : " Ditambahkan Oleh:-"
+auth_8 : "┗ Ditambahkan Oleh:-"
 
 # PLUGIN - Admin
 admin_1 : "Musik sudah Dijeda."
