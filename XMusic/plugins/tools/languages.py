@@ -13,7 +13,7 @@ from XMusic.utils.decorators import (ActualAdminCB,
 # Languages Available
 
 
-def lanuages_keyboard(_):
+def languages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(
@@ -48,7 +48,7 @@ LANGUAGE_COMMAND = get_command("LANGUAGE_COMMAND")
 )
 @language
 async def langs_command(client, message: Message, _):
-    keyboard = lanuages_keyboard(_)
+    keyboard = languages_keyboard(_)
     await message.reply_text(
         _["setting_1"].format(message.chat.title, message.chat.id),
         reply_markup=keyboard,
@@ -62,7 +62,7 @@ async def lanuagecb(client, CallbackQuery, _):
         await CallbackQuery.answer()
     except:
         pass
-    keyboard = lanuages_keyboard(_)
+    keyboard = languages_keyboard(_)
     return await CallbackQuery.edit_message_reply_markup(
         reply_markup=keyboard
     )
