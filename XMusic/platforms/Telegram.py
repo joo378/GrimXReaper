@@ -7,7 +7,7 @@ from pyrogram.types import Voice
 
 import config
 from config import MUSIC_BOT_NAME
-from YukkiMusic import app
+from XMusic import app
 
 from ..utils.formatters import (convert_bytes, get_readable_time,
                                 seconds_to_min)
