@@ -1,7 +1,7 @@
 {
     "name": "Kay X Music",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
+    "description": "Telegram Group Calls streaming bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.",
+    "logo": "https://telegra.ph/file/c9aaa511a63d6ad617856.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -14,22 +14,22 @@
     "stack": "container",
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Dapatkan Dari https://my.telegram.org",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Dapatkan Dari https://my.telegram.org",
         "value": "",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "description": "Jika Anda ingin asisten Anda meninggalkan semua obrolan secara otomatis setelah beberapa waktu.",
         "value": "True",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "Token Bot dari Botfather",
         "value": "",
         "required": true
       },
@@ -39,42 +39,42 @@
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "description": "Nama untuk Bot Musik Anda. Tolong jangan gunakan karakter ascii",
         "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": "ID pengguna dari pengguna yang ingin Anda tambahkan sebagai PEMILIK. Beberapa value harus dipisahkan dengan spasi.",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "Sesi String Pyrogram. Satu Asisten adalah Wajib.",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "API KEY akun Heroku Anda",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
+        "description": "Nama app/bot heroku Anda, Samakan dengan nama paling atas",
         "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "description": "ID Grup Log Anda, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Gunakan hanya Grup. Tolong jangan gunakan ID Channel.",
         "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
-        "description": "If you dont know this, Leave as it is",
+        "description": "Jika Anda tidak tahu ini, Biarkan apa adanya",
         "value": "https://github.com/Kayzyu/KayXMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
-        "description": "Repo's Branch Name",
+        "description": "Nama branch repo",
         "value": "main",
         "required": true
       }
