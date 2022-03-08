@@ -28,7 +28,7 @@ Pengguna Auth dapat menggunakan perintah admin tanpa hak admin di obrolan Anda.
 
 HELP_2 = """✅<u>**Perintah Play:**</u>
 
-**cplay** atau **cstream **Singkatan dari Channel Play.
+**cplay** atau **cstream** Singkatan dari Channel Play.
 **vplay** Singkatan dari Video Play.
 
 /play atau /vplay atau /cplay  - Bot akan mulai memainkan permintaan yang Anda berikan di obrolan suara.
@@ -52,7 +52,7 @@ HELP_3 = """✅<u>**Perintah Bot:**</u>
 
 /lyrics [Judul Musik] - Pencarian lirik untuk musik tertentu di web.
 
-/song [Nama Trek] atau [Link YT] - Unduh lagu apa pun dari youtube dalam format mp3 atau mp4.
+/song [Nama Trek] atau [Link Youtube] - Unduh lagu apapun dari youtube dalam format mp3 atau mp4.
 
 **c** Singkatan dari Channel Play.
 /queue atau /cqueue- Periksa Daftar Antrian Musik."""
@@ -83,11 +83,11 @@ HELP_4 = """✅<u>**Perintah Ekstra:**</u>
 
 <u>Options in playmode:</u>
 
-1️⃣ **Search Mode** [ Direct or Inline] - Perubahan mode pencarian Anda saat Anda memberi /play mode. 
+1️⃣ **Search Mode** [Direct or Inline] - Perubahan mode pencarian Anda saat Anda memberi /play mode. 
 
-2️⃣ **Play Mode** [ Group or Channel] - Ubah mode Putar Anda ke Channel atau Grup dan streaming musik hanya di sana.
+2️⃣ **Play Mode** [Group or Channel] - Ubah mode Putar Anda ke Channel atau Grup dan streaming musik hanya di sana.
 
-3️⃣ **Play Type** [ Everyone or Admins] - Jika admin, hanya admin yang ada di grup yang dapat memutar musik di obrolan suara."""
+3️⃣ **Play Type** [Everyone or Admins] - Jika admin, hanya admin yang ada di grup yang dapat memutar musik di obrolan suara."""
 
 HELP_5 = """🔰**<u>Tambahkan & Hapus pengguna sudo :</u>**
 /addsudo [Username atau Balas pesan pengguna]
