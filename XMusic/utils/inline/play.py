@@ -28,7 +28,8 @@ def stream_markup(_, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
                 text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
@@ -36,8 +37,7 @@ def stream_markup(_, videoid):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
         ],
     ]
@@ -48,7 +48,7 @@ def telegram_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-               text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
@@ -78,7 +78,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel):
         ],
     ]
     return buttons
-    
+
 
 def livestream_markup(_, videoid, user_id, mode, channel):
     buttons = [
