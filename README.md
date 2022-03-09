@@ -11,7 +11,7 @@
  * Dukungan Multi-Bahasa
 
 
- # Gambaran Umum
+ # Umum
 
  Berikut adalah ikhtisar tingkat tinggi singkat dari Kay X Music:
 
@@ -61,7 +61,7 @@
  > Klik tombol di bawah ini untuk memperluas dan proses penjelasan detail.  !
 
 
- ### Proses Penerapan
+ ### Proses Deploy
  - Klik tombol deploy di atas dan login ke [akun heroku](https://heroku.com/login) Anda.
  - Isi nilai Anda di sana.
  - Jika Anda tidak tahu cara mendapatkan config vars : [Silakan lihat di sini](../config/README.md)
@@ -76,3 +76,43 @@
  - Klik Ikon Pensil di bawah bagian sumber daya.
  - Nyalakan sakelar yang ada di dekat ikon pensil.
  - Selamat Bot Musik Anda sekarang Booting.
+
+### Cek Log
+ - Setelah Menghidupkan booting Anda.
+ - Klik Tombol Lainnya yang ada di sudut kanan atas.
+ - Klik tombol Lihat Log dari menu tarik-turun.
+ - Anda memeriksa log Anda di sana!
+ - Klik tombol simpan di bagian bawah untuk menyimpan log Anda dan meneruskannya kepada kami di [KayzuSupport](https://t.me/KayzuSupport) jika Anda menghadapi masalah
+
+ 
+
+
+ ## Support
+
+ Hubungi pengelola di salah satu tempat berikut:
+
+ - [GitHub](https://github.com/Kayzyu/KayXMusic)
+ - Opsi kontak yang tercantum di [profil GitHub ini](https://github.com/Kayzyu)
+ - [Grup](https://t.me/KayzuSupport)
+ - [Saluran](https://t.me/kayzuchannel)
+
+ Jika Anda ingin mengucapkan terima kasih atau/dan mendukung pengembangan aktif KayXMusic:
+
+ - Tambahkan [Repo GitHub](https://github.com/Kayzyu/KayXMusic) ke proyek.
+ - Fork Repo :)
+
+ ## Credits
+
+ Pertama, terima kasih telah meluangkan waktu untuk berkontribusi!  Kontribusilah yang membuat komunitas open-source menjadi tempat yang luar biasa untuk belajar, menginspirasi, dan berkreasi.  Setiap kontribusi yang Anda buat akan bermanfaat bagi orang lain dan sangat dihargai.
+
+ Terima kasih khusus untuk proyek/orang luar biasa ini yang/yang membantu memberi kekuatan pada Kay X Music :
+ - [TeamYukki](https://github.com/TeamYukki)
+ - [Pyrogram](https://github.com/pyrogram/pyrogram)
+ - [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls)
+ - [Tim CallsMusic](https://github.com/Callsmusic)
+ - [TheHamkerCat](https://github.com/TheHamkerCat)
+ - [Charon Baglari](https://github.com/XCBv021)
+ - [KitaroEx](https://github.com/KITAROO)
+
+
+ Pengingat bahwa Anda hebat, Anda cukup, dan kehadiran Anda dihargai.  Jika Anda berjuang dengan kesehatan mental Anda, hubungi seseorang yang Anda cintai dan konsultasikan dengan profesional.
