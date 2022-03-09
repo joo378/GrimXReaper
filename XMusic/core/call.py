@@ -225,9 +225,7 @@ class Call(PyTgCalls):
             try:
                 await self.join_assistant(original_chat_id, chat_id)
             except Exception as e:
-                raise AssistantErr(
-                    "**No Active Voice Chat Found**\n\nPlease make sure group's voice chat is enabled. If already enabled, please end it and start fresh voice chat again."
-                )
+                raise e
             try:
                 await assistant.join_group_call(
                     chat_id,
@@ -235,7 +233,9 @@ class Call(PyTgCalls):
                     stream_type=StreamType().pulse_stream,
                 )
             except Exception as e:
-                raise e
+                raise AssistantErr(
+                    "**No Active Voice Chat Found**\n\nPlease make sure group's voice chat is enabled. If already enabled, please end it and start fresh voice chat again."
+                )
 
     async def change_stream(self, client, chat_id):
         check = db.get(chat_id)
