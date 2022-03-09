@@ -167,6 +167,8 @@ def auth_users_markup(_, status: Union[bool, str] = None):
             InlineKeyboardButton(
                 text=_["ST_B_3"], callback_data="AUTHANSWER"
             ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["ST_B_15"] if status == True else _["ST_B_16"],
                 callback_data="AUTH",
