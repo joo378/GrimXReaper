@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://telegra.ph/file/4c77731a232ec4fff41cb.jpg">
+</p>
 
 [Kay X Music](https://github.com/Kayzyu/KayXMusic) Telegram Group Calls streaming bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.
 
