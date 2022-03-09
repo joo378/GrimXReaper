@@ -167,7 +167,7 @@ async def start_comm(client, message: Message, _):
             OWNER = OWNER_ID[0]
         except:
             OWNER = None
-        out = private_panel(_, app.username, OWNER)
+        out = private_panel(_, app.username)
         if config.START_IMG_URL:
             try:
                 await message.reply_photo(
