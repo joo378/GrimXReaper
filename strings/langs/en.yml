@@ -214,7 +214,7 @@ song_11 : "Uploading Started\n\nUploading speed could be slow. Please hold on.."
 # Tools - Queue
 queue_1 : "Please Wait..Fetching Queue.."
 queue_2 : "No tracks inside Queue."
-queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
+queue_3 : "**<u>Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
 queue_4 : "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
 
 # All Streaming Lines
@@ -242,7 +242,7 @@ S_B_4 : "📨 Cʜᴀɴɴᴇʟ​"
 S_B_5 : "✚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ​"
 S_B_6 : "🌐 Rᴇᴘᴏ Mᴜꜱɪᴄ​"
 S_B_7 : "👤 Bᴏᴛ Oᴡɴᴇʀ​"
-S_B_8 : "🔎 Hᴇʟᴘ​"
+S_B_8 : "​📚 Hᴇʟᴘ​"
 
 #Help 
 H_B_1 : "Admin Commands"
