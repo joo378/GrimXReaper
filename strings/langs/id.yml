@@ -79,7 +79,7 @@ help_1 : "Klik tombol di bawah untuk informasi lebih lanjut. Jika Anda menghadap
 help_2 : "Hubungi saya di PM untuk bantuan."
 
 # Pengaturan
-setting_1 : "⚙️ ️ **Setelan Bot Musik**\n\n 🖇 **Grup:** {0}\n 🔖 **ID Grup:** `{1}`\n\n✨** Pilih tombol fungsi dari bawah yang ingin Anda edit atau ubah.**"
+setting_1 : "⚙️ ️**Setelan Bot Musik**\n\n 🖇 **Grup:** {0}\n 🔖 **ID Grup:** `{1}`\n\n💡** Pilih tombol fungsi dari bawah yang ingin Anda edit atau ubah.**"
 setting_3 : "❓ Apa Ini?\n\n1) Langsung: Memutar musik penelusuran secara langsung. Gunakan -v untuk memutar video dalam mode langsung.\n\n2) Sebaris: Mengembalikan Tombol Markup Sebaris untuk memilih antara video & audio."
 setting_4 : "❓ Apa ini?\n\n👥 Semua orang: Siapa saja dapat menggunakan perintah admin (lewati, jeda, lanjutkan, dll) yang ada di grup ini.\n\n🙍 Hanya Admin: Hanya admin dan pengguna yang berwenang yang dapat menggunakan admin perintah."
 setting_5 : "Tidak Ditemukan Pengguna Resmi\n\nAnda dapat mengizinkan non-admin menggunakan perintah admin saya dengan /auth dan menghapus dengan menggunakan /unauth"
