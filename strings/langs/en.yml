@@ -235,14 +235,14 @@ UNBAN_BUTTON : "🗑 Unban Assistant"
 L_B_1 : "🚀 Checkout Lyrics Now"
 
 # Start
-S_B_1 : "🗒 Commands"
-S_B_2 : "🔧 Settings"
-S_B_3 : "📨 Support"
-S_B_4 : "📨 Channel"
-S_B_5 : "✚ Add me to your Group"
-S_B_6 : "🌐 Repo Music"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 Help"
+S_B_1 : "🗒 Cᴏᴍᴍᴀɴᴅꜱ"
+S_B_2 : "🔧 Sᴇᴛᴛɪɴɢꜱ"
+S_B_3 : "📨 Sᴜᴘᴘᴏʀᴛ​"
+S_B_4 : "📨 Cʜᴀɴɴᴇʟ​"
+S_B_5 : "✚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ​"
+S_B_6 : "🌐 Rᴇᴘᴏ Mᴜꜱɪᴄ​"
+S_B_7 : "👤 Bᴏᴛ Oᴡɴᴇʀ​"
+S_B_8 : "🔎 Hᴇʟᴘ​"
 
 #Help 
 H_B_1 : "Admin Commands"
