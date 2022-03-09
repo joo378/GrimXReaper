@@ -3,7 +3,7 @@ from typing import Union
 
 import aiohttp
 from bs4 import BeautifulSoup
-from youtubesearchpython import VideosSearch
+from youtubesearchpython.__future__ import VideosSearch
 
 
 class RessoAPI:
@@ -41,7 +41,7 @@ class RessoAPI:
         if des == "":
             return
         results = VideosSearch(title, limit=1)
-        for result in results.result()["result"]:
+        for result in (await results.next())["result"]:
             title = result["title"]
             ytlink = result["link"]
             vidid = result["id"]
