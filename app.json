@@ -46,6 +46,11 @@
         "value": "",
         "required": true
       },
+      "START_IMG_URL": {
+        "description": "Foto Untuk Start di bot Contoh: https://telegra.ph/file/.",
+        "value": "https://telegra.ph/file/6e824ff3944d394e58860.jpg",
+        "required": false
+      },
       "HEROKU_API_KEY": {
         "description": "API KEY akun Heroku Anda",
         "value": "",
