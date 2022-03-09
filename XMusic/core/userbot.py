@@ -45,7 +45,7 @@ class Userbot(Client):
 
     async def start(self):
         kyzug = str(pybase64.b64decode("S2F5enVTdXBwb3J0"))[2:14]
-        kyzuc = str(pybase64.b64decode("a2F5enVjaGFubmVs"))[2:15]
+        kyzuc = str(pybase64.b64decode("a2F5enVjaGFubmVs"))[2:14]
         shbot = str(pybase64.b64decode("U2hhcmluZ1VzZXJib3Q="))[2:16]
         LOGGER(__name__).info(f"Starting Assistant Clients")
         if config.STRING1:
