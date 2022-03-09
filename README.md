@@ -1,8 +1,7 @@
 
 
-[Kay X Music](https://github.com/Kayzyu/KayXMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
+[Kay X Music](https://github.com/Kayzyu/KayXMusic) Telegram Group Calls streaming bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.
 
-* Youtube, Soundcloud, Apple Music, Spotify, Resso and Telegram Audios & Videos support.
 * Written from scratch, making it stable and less crashes.
 * Attractive thumbnails, fonts and images,  making experience more user-friendly and interactive.
 * Loop, Shuffle, Specific Skip, Playlists etc support
@@ -60,11 +59,6 @@ This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls
 > Click on buttons below to expand and  detailed explanation process. !
 
 
-<details>
-    <summary><b> Detailed Heroku Deployment Process » </b></summary>
-
-<img src="" align="right" width="350" height="700"/>
-
 ### 🚀 Deploy Process
 - Click on the deploy button above and login to your [heroku account](https://heroku.com/login) .
 - Fill your values there.
@@ -90,10 +84,6 @@ This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls
 - Click on save button there at bottom to save your logs and forward it to us on [KayzuSupport](https://t.me/KayzuSupport) if you face any problem
 
 </details>
-
-
-
-<img src="" align="center">
 
 
 ## 🏷 Support
