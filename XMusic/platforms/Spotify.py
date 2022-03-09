@@ -2,7 +2,7 @@ import re
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-from youtubesearchpython import VideosSearch
+from youtubesearchpython.__future__ import VideosSearch
 
 import config
 
@@ -38,7 +38,7 @@ class SpotifyAPI:
             if "Various Artists" not in fetched:
                 info += fetched
         results = VideosSearch(info, limit=1)
-        for result in results.result()["result"]:
+        for result in (await results.next())["result"]:
             ytlink = result["link"]
             title = result["title"]
             vidid = result["id"]
