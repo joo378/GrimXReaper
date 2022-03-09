@@ -23,7 +23,7 @@ def setting_markup(_):
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_5"], callback_data="PM"
+                text=_["ST_B_25"], callback_data="PM"
             ),
             InlineKeyboardButton(
                 text=_["ST_B_7"], callback_data="CM"
@@ -168,13 +168,13 @@ def auth_users_markup(_, status: Union[bool, str] = None):
                 text=_["ST_B_3"], callback_data="AUTHANSWER"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_16"] if status == True else _["ST_B_17"],
+                text=_["ST_B_15"] if status == True else _["ST_B_16"],
                 callback_data="AUTH",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_18"], callback_data="AUTHLIST"
+                text=_["ST_B_17"], callback_data="AUTHLIST"
             ),
         ],
         [
@@ -199,30 +199,21 @@ def playmode_users_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_19"], callback_data="SEARCHANSWER"
-            ),
-            InlineKeyboardButton(
-                text=_["ST_B_20"] if Direct == True else _["ST_B_21"],
+                text=_["ST_B_18"] if Direct == True else _["ST_B_19"],
                 callback_data="MODECHANGE",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_22"], callback_data="PLAYMODEANSWER"
-            ),
-            InlineKeyboardButton(
-                text=_["ST_B_23"] if Group == True else _["ST_B_24"],
+                text=_["ST_B_20"] if Group == True else _["ST_B_21"],
                 callback_data="CHANNELMODECHANGE",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_25"], callback_data="PLAYTYPEANSWER"
-            ),
-            InlineKeyboardButton(
-                text=_["ST_B_16"]
+                text=_["ST_B_22"]
                 if Playtype == True
-                else _["ST_B_17"],
+                else _["ST_B_23"],
                 callback_data="PLAYTYPECHANGE",
             ),
         ],
