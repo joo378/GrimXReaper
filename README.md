@@ -24,7 +24,7 @@
 
 
 
- # ️ Memulai
+ # Memulai
 
  ### Sebelum menggunakan Kay X Music , harap lihat [semua konfigurasi yang tersedia](../config/README.md) , juga periksa [semua perintah yang tersedia](../strings/command.yml) dari  proyek.
 
@@ -37,8 +37,8 @@
  > Untuk menghindari konflik dalam proyek Anda, Anda harus memiliki/menginstal
 
  - [Python3.9](https://www.python.org/downloads/release/python-390/)
- - [Kunci API Telegram](https://docs.pyrogram.org/intro/setup#api-keys)
- - [Token Bot Telegram](https://t.me/botfather)
+ - [Api Id & Api hash](https://telegram.org/auth)
+ - [Bot Token](https://t.me/botfather)
  - [MongoDB URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
 
 
@@ -49,9 +49,9 @@
  - Hasilkan Sesi String Pyrogram melalui [String Man Bot](https://t.me/stringmanrobot)
 
 
- ## Penerapan Heroku
+ ## Deploy Heroku
 
- Klik tombol di bawah untuk menerapkan KayXMusic di Heroku!
+ Klik tombol di bawah untuk Deploy KayXMusic di Heroku!
 
   
 
@@ -61,7 +61,7 @@
  > Klik tombol di bawah ini untuk memperluas dan proses penjelasan detail.  !
 
 
- ### Proses Deploy
+### Proses Deploy
  - Klik tombol deploy di atas dan login ke [akun heroku](https://heroku.com/login) Anda.
  - Isi nilai Anda di sana.
  - Jika Anda tidak tahu cara mendapatkan config vars : [Silakan lihat di sini](../config/README.md)
@@ -71,11 +71,12 @@
  - Saat aplikasi Anda berhasil digunakan, klik tombol Kelola Aplikasi.
 
 
- ### Proses Booting
+### Proses Booting
  - Cari Tab Sumber Daya di dalam aplikasi Anda.  (Cek Gambar untuk lebih jelasnya)
  - Klik Ikon Pensil di bawah bagian sumber daya.
  - Nyalakan sakelar yang ada di dekat ikon pensil.
  - Selamat Bot Musik Anda sekarang Booting.
+
 
 ### Cek Log
  - Setelah Menghidupkan booting Anda.
@@ -85,21 +86,18 @@
  - Klik tombol simpan di bagian bawah untuk menyimpan log Anda dan meneruskannya kepada kami di [KayzuSupport](https://t.me/KayzuSupport) jika Anda menghadapi masalah
 
  
-
-
- ## Support
+## Support
 
  Hubungi pengelola di salah satu tempat berikut:
 
  - [GitHub](https://github.com/Kayzyu/KayXMusic)
  - Opsi kontak yang tercantum di [profil GitHub ini](https://github.com/Kayzyu)
- - [Grup](https://t.me/KayzuSupport)
- - [Saluran](https://t.me/kayzuchannel)
+ - [Groups](https://t.me/KayzuSupport)
+ - [Channel](https://t.me/kayzuchannel)
 
  Jika Anda ingin mengucapkan terima kasih atau/dan mendukung pengembangan aktif KayXMusic:
 
- - Tambahkan [Repo GitHub](https://github.com/Kayzyu/KayXMusic) ke proyek.
- - Fork Repo :)
+ - Hubungi [Kay-Ex](https://t.me/Kayzuuuuu) 
 
  ## Credits
 
@@ -113,6 +111,6 @@
  - [TheHamkerCat](https://github.com/TheHamkerCat)
  - [Charon Baglari](https://github.com/XCBv021)
  - [KitaroEx](https://github.com/KITAROO)
-
+ - [AlfaEx](https://github.com/coeF)
 
  Pengingat bahwa Anda hebat, Anda cukup, dan kehadiran Anda dihargai.  Jika Anda berjuang dengan kesehatan mental Anda, hubungi seseorang yang Anda cintai dan konsultasikan dengan profesional.
