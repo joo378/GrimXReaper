@@ -135,7 +135,7 @@ def cleanmode_settings_markup(
                 text=_["ST_B_7"], callback_data="CMANSWER"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_16"] if status == True else _["ST_B_17"],
+                text=_["ST_B_14"] if status == True else _["ST_B_15"],
                 callback_data="CLEANMODE",
             ),
         ],
@@ -144,7 +144,7 @@ def cleanmode_settings_markup(
                 text=_["ST_B_23"], callback_data="COMMANDANSWER"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_15"] if dels == True else _["ST_B_16"],
+                text=_["ST_B_14"] if dels == True else _["ST_B_15"],
                 callback_data="COMMANDELMODE",
             ),
         ],
