@@ -161,6 +161,27 @@ def cleanmode_settings_markup(
     return buttons
 
 
+def auth_users_markup(_, status: Union[bool, str] = None):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["ST_B_3"], callback_data="AUTHANSWER"
+            ),
+            InlineKeyboardButton(
+                text=_["ST_B_15"] if status == True else _["ST_B_16"],
+                callback_data="AUTH",
+                text=_["ST_B_23"], callback_data="COMMANDANSWER"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["ST_B_17"], callback_data="AUTHLIST"
+            ),
+        ],
+    ]
+    return buttons
+
+
 def playmode_users_markup(
     _,
     Direct: Union[bool, str] = None,
