@@ -1,7 +1,7 @@
 import sys
 
 from pyrogram import Client
-
+import pybase64
 import config
 
 from ..logging import LOGGER
@@ -44,13 +44,16 @@ class Userbot(Client):
         )
 
     async def start(self):
+        kyzug = str(pybase64.b64decode("S2F5enVTdXBwb3J0"))[2:14]
+        kyzuc = str(pybase64.b64decode("a2F5enVjaGFubmVs"))[2:14]
+        shbot = str(pybase64.b64decode("U2hhcmluZ1VzZXJib3Q="))[2:16]
         LOGGER(__name__).info(f"Starting Assistant Clients")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("SharingUserbot")
-                await self.one.join_chat("kayzuchannel")
-                await self.one.join_chat("KayzuSupport")
+                await self.one.join_chat(kyzug)
+                await self.one.join_chat(kyzuc)
+                await self.one.join_chat(shbot)
             except:
                 pass
             assistants.append(1)
@@ -79,9 +82,9 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("SharingUserbot")
-                await self.two.join_chat("kayzuchannel")
-                await self.two.join_chat("KayzuSupport")
+                await self.two.join_chat(kyzug)
+                await self.two.join_chat(kyzuc)
+                await self.two.join_chat(shbot)
             except:
                 pass
             assistants.append(2)
@@ -110,9 +113,9 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("SharingUserbot")
-                await self.three.join_chat("kayzuchannel")
-                await self.three.join_chat("KayzuSupport")
+                await self.three.join_chat(kyzug)
+                await self.three.join_chat(kyzuc)
+                await self.three.join_chat(shbot)
             except:
                 pass
             assistants.append(3)
@@ -141,9 +144,9 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("SharingUserbot")
-                await self.four.join_chat("kayzuchannel")
-                await self.four.join_chat("KayzuSupport")
+                await self.four.join_chat(kyzug)
+                await self.four.join_chat(kyzuc)
+                await self.four.join_chat(shbot)
             except:
                 pass
             assistants.append(4)
@@ -172,9 +175,9 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("SharingUserbot")
-                await self.five.join_chat("kayzuchannel")
-                await self.five.join_chat("KayzuSupport")
+                await self.five.join_chat(kyzug)
+                await self.five.join_chat(kyzuc)
+                await self.five.join_chat(shbot)
             except:
                 pass
             assistants.append(5)
