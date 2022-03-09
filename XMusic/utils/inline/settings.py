@@ -167,16 +167,23 @@ def auth_users_markup(_, status: Union[bool, str] = None):
             InlineKeyboardButton(
                 text=_["ST_B_3"], callback_data="AUTHANSWER"
             ),
-        ],
-        [
             InlineKeyboardButton(
-                text=_["ST_B_15"] if status == True else _["ST_B_16"],
+                text=_["ST_B_16"] if status == True else _["ST_B_17"],
                 callback_data="AUTH",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_17"], callback_data="AUTHLIST"
+                text=_["ST_B_18"], callback_data="AUTHLIST"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["BACK_BUTTON"],
+                callback_data="settingsback_helper",
+            ),
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"], callback_data="close"
             ),
         ],
     ]
