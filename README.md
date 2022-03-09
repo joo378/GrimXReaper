@@ -52,7 +52,7 @@ This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls
 
 <h4>Click the button below to deploy KayXMusic on Heroku!</h4>    
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kayzyu/KayXMusic/"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="250" height="40.00" /></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Kayzyu/KayXMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="250" height="40.00" /></a></p>
 
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=S2F5enl1L0theVhNdXNpYyBtYWlu"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
