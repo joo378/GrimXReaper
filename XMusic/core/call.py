@@ -225,7 +225,9 @@ class Call(PyTgCalls):
             try:
                 await self.join_assistant(original_chat_id, chat_id)
             except Exception as e:
-                raise e
+                raise AssistantErr(
+                    "**No Active Voice Chat Found**\n\nPlease make sure group's voice chat is enabled. If already enabled, please end it and start fresh voice chat again."
+                )
             try:
                 await assistant.join_group_call(
                     chat_id,
