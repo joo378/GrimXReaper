@@ -157,7 +157,7 @@ playlist_1 : "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\
 playlist_2 : "Getting your playlist. Please wait"
 playlist_3 : "You have no playlist on Bot's Server."
 playlist_4 : "Fetched Playlist:\n\n"
-playlist_5 :  "    Duration- {0} Mins"
+playlist_5 :  "⏳ Duration- {0} Mins"
 playlist_6 : "Contact me in PM for deletion of Playlists."
 playlist_7 : "Tracks Inside Playlist: {0}\n\nPress the Buttons to delete a particular track in your playlist.\n\nTo delete whole playlist: Press Del Whole Playlist button."
 playlist_8 : "Already Exists\n\nThis track exists in your playlist."
