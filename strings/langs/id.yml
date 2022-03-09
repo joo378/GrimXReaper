@@ -298,6 +298,7 @@ ST_B_21 : "✅ Tombol"
 ST_B_22 : "🏘 Grup"
 ST_B_23 : "🏷 Channel"
 ST_B_24 : "🗑 Perintah Bersih"
+ST_B_15 : "🤖 Bot Mode"
 
 #Lagu
 SG_B_1 : "↗️ Buka Obrolan Pribadi"
