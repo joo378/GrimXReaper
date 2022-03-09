@@ -135,43 +135,17 @@ def cleanmode_settings_markup(
                 text=_["ST_B_7"], callback_data="CMANSWER"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_14"] if status == True else _["ST_B_15"],
+                text=_["ST_B_16"] if status == True else _["ST_B_17"],
                 callback_data="CLEANMODE",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_16"] if dels == True else _["ST_B_17"],
+                text=_["ST_B_23"], callback_data="COMMANDANSWER"
+            ),
+            InlineKeyboardButton(
+                text=_["ST_B_15"] if dels == True else _["ST_B_16"],
                 callback_data="COMMANDELMODE",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["BACK_BUTTON"],
-                callback_data="settingsback_helper",
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"], callback_data="close"
-            ),
-        ],
-    ]
-    return buttons
-
-
-def auth_users_markup(_, status: Union[bool, str] = None):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["ST_B_3"], callback_data="AUTHANSWER"
-            ),
-            InlineKeyboardButton(
-                text=_["ST_B_15"] if status == True else _["ST_B_16"],
-                callback_data="AUTH",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["ST_B_17"], callback_data="AUTHLIST"
             ),
         ],
         [
