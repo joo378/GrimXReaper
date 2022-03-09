@@ -277,7 +277,7 @@ async def update_(client, message, _):
                 try:
                     await app.send_message(
                         x,
-                        f"{config.MUSIC_BOT_NAME} baru saja me-restart musik. Maaf untuk masalah.\n\nStart mulai setelah 10-15 detik lagi."
+                        f"{config.MUSIC_BOT_NAME} baru saja me-restart musik. Maaf untuk masalah.\n\nStart mulai setelah 10-15 detik lagi.",
                     )
                     await remove_active_chat(x)
                     await remove_active_video_chat(x)
@@ -304,7 +304,7 @@ async def update_(client, message, _):
             try:
                 await app.send_message(
                     x,
-                    f"{config.MUSIC_BOT_NAME} baru saja me-restart musik. Maaf untuk masalah.\n\nStart mulai setelah 10-15 detik lagi.,
+                    f"{config.MUSIC_BOT_NAME} baru saja me-restart musik. Maaf untuk masalah.\n\nStart mulai setelah 10-15 detik lagi.",
                 )
                 await remove_active_chat(x)
                 await remove_active_video_chat(x)
