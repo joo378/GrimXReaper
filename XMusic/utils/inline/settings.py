@@ -18,7 +18,7 @@ def setting_markup(_):
                 text=_["ST_B_3"], callback_data="AU"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_6"], callback_data="LG"
+                text=_["ST_B_5"], callback_data="LG"
             ),
         ],
         [
@@ -26,7 +26,7 @@ def setting_markup(_):
                 text=_["ST_B_25"], callback_data="PM"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_7"], callback_data="CM"
+                text=_["ST_B_6"], callback_data="CM"
             ),
         ],
         [
@@ -47,25 +47,25 @@ def audio_quality_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_8"].format("✅")
+                text=_["ST_B_7"].format("✅")
                 if low == True
-                else _["ST_B_8"].format(""),
+                else _["ST_B_7"].format(""),
                 callback_data="LQA",
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_9"].format("✅")
+                text=_["ST_B_8"].format("✅")
                 if medium == True
-                else _["ST_B_9"].format(""),
+                else _["ST_B_8"].format(""),
                 callback_data="MQA",
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_10"].format("✅")
+                text=_["ST_B_9"].format("✅")
                 if high == True
-                else _["ST_B_10"].format(""),
+                else _["ST_B_9"].format(""),
                 callback_data="HQA",
             )
         ],
@@ -91,25 +91,25 @@ def video_quality_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_11"].format("✅")
+                text=_["ST_B_10"].format("✅")
                 if low == True
-                else _["ST_B_11"].format(""),
+                else _["ST_B_10"].format(""),
                 callback_data="LQV",
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_12"].format("✅")
+                text=_["ST_B_11"].format("✅")
                 if medium == True
-                else _["ST_B_12"].format(""),
+                else _["ST_B_11"].format(""),
                 callback_data="MQV",
             )
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_13"].format("✅")
+                text=_["ST_B_12"].format("✅")
                 if high == True
-                else _["ST_B_13"].format(""),
+                else _["ST_B_12"].format(""),
                 callback_data="HQV",
             )
         ],
@@ -132,10 +132,10 @@ def cleanmode_settings_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_7"], callback_data="CMANSWER"
+                text=_["ST_B_18"], callback_data="CMANSWER"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_14"] if status == True else _["ST_B_15"],
+                text=_["ST_B_13"] if status == True else _["ST_B_14"],
                 callback_data="CLEANMODE",
             ),
         ],
@@ -144,7 +144,7 @@ def cleanmode_settings_markup(
                 text=_["ST_B_26"], callback_data="COMMANDANSWER"
             ),
             InlineKeyboardButton(
-                text=_["ST_B_14"] if dels == True else _["ST_B_15"],
+                text=_["ST_B_15"] if dels == True else _["ST_B_16"],
                 callback_data="COMMANDELMODE",
             ),
         ],
@@ -199,7 +199,7 @@ def playmode_users_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["ST_B_18"] if Direct == True else _["ST_B_19"],
+                text=_["ST_B_15"] if Direct == True else _["ST_B_16"],
                 callback_data="MODECHANGE",
             ),
         ],
