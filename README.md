@@ -23,13 +23,12 @@ This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls
 
 
 
-
 # ⚡️ Getting Started
 
 ### Before deploying Kay X Music , please have a look towards [all available config vars](../config/README.md) , also please check [all available commands](../strings/command.yml) of the project.
 
 > If you want to start working with Kay X Music you can either fork or import repo .
-> If you'd like to talk to us, join us on our [Telegram Group](https://t.me/YukkiSupport)
+> If you'd like to talk to us, join us on our [Telegram Group](https://t.me/KayzuSupport)
 
 
 ## 🖇 Prerequisites
@@ -53,12 +52,16 @@ This project is based on [Pyrogram](https://github.com/pyrogram) and [Py-Tgcalls
 
 <h4>Click the button below to deploy KayXMusic on Heroku!</h4>    
 
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kayzyu/KayXMusic/"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="250" height="40.00" /></a></p>
+
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=S2F5enl1L0theVhNdXNpYyBtYWlu"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
+
 
 > Click on buttons below to expand and  detailed explanation process. !
 
 
 <details>
-    <summary><b> Detailed Heroku Depoyment Process » </b></summary>
+    <summary><b> Detailed Heroku Deployment Process » </b></summary>
 
 <img src="" align="right" width="350" height="700"/>
 
@@ -100,7 +103,7 @@ Reach out to the maintainer at one of the following places:
 - [GitHub](https://github.com/Kayzyu/KayXMusic)
 - Contact options listed on [this GitHub profile](https://github.com/Kayzyu)
 - [Groups](https://t.me/KayzuSupport)
-- [Channel(https://t.me/kayzuchannel)
+- [Channel](https://t.me/kayzuchannel)
 
 ## 🎗 Project assistance
 
