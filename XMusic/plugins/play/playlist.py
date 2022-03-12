@@ -1,17 +1,15 @@
-import os
+Mimport os
 from random import randint
 
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, 
-                            Message)
+                            InlineKeyboardMarkup, Message)
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
 from XMusic import Carbon, YouTube, app
-from XMusic.utils.database import (delete_playlist, get_chatmode,
-                                   get_cmode, get_playlist,
+from XMusic.utils.database import (delete_playlist, get_playlist,
                                    get_playlist_names,
                                    save_playlist)
 from XMusic.utils.decorators.language import language, languageCB
@@ -48,7 +46,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Xbin(msg)
+    link = await Yukkibin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -142,22 +140,7 @@ async def play_playlist(client, CallbackQuery, _):
             )
         except:
             return
-    chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-    if chatmode == "Group":
-        chat_id = CallbackQuery.message.chat.id
-        channel = None
-    else:
-        chat_id = await get_cmode(CallbackQuery.message.chat.id)
-        try:
-            chat = await app.get_chat(chat_id)
-            channel = chat.title
-        except:
-            try:
-                return await CallbackQuery.answer(
-                    _["cplay_4"], show_alert=True
-                )
-            except:
-                return
+    chat_id = CallbackQuery.message.chat.id
     user_name = CallbackQuery.from_user.first_name
     await CallbackQuery.message.delete()
     result = []
@@ -166,9 +149,7 @@ async def play_playlist(client, CallbackQuery, _):
     except:
         pass
     video = True if mode == "v" else None
-    mystic = await CallbackQuery.message.reply_text(
-        _["play_2"].format(channel) if channel else _["play_1"]
-    )
+    mystic = await CallbackQuery.message.reply_text(_["play_1"])
     for vidids in _playlist:
         result.append(vidids)
     try:
