@@ -1,3 +1,5 @@
+import asyncio
+
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
@@ -18,15 +20,18 @@ from XMusic.utils.decorators.language import language
 from XMusic.utils.inline import (help_pannel, 
                                  private_panel, 
                                  start_pannel)
-                                 
-                                 
+
+
+loop = asyncio.get_running_loop()
+
+
 @app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
     & ~filters.edited
     & ~BANNED_USERS
 )
-@language
+@LanguageStart
 async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
@@ -44,43 +49,53 @@ async def start_comm(client, message: Message, _):
             )
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
-            if tot > 10:
-                tracks = 10
-            else:
-                tracks = tot
             if not stats:
+                await asyncio.sleep(1)
                 return await m.edit(_["ustats_1"])
-            msg = ""
-            limit = 0
-            results = {}
-            for i in stats:
-                top_list = stats[i]["spot"]
-                results[str(i)] = top_list
-                list_arranged = dict(
-                    sorted(
-                        results.items(),
-                        key=lambda item: item[1],
-                        reverse=True,
+
+            def get_stats():
+                msg = ""
+                limit = 0
+                results = {}
+                for i in stats:
+                    top_list = stats[i]["spot"]
+                    results[str(i)] = top_list
+                    list_arranged = dict(
+                        sorted(
+                            results.items(),
+                            key=lambda item: item[1],
+                            reverse=True,
+                        )
                     )
+                if not results:
+                    return m.edit(_["ustats_1"])
+                tota = 0
+                videoid = None
+                for vidid, count in list_arranged.items():
+                    tota += count
+                    if limit == 10:
+                        continue
+                    if limit == 0:
+                        videoid = vidid
+                    limit += 1
+                    details = stats.get(vidid)
+                    title = (details["title"][:35]).title()
+                    if vidid == "telegram":
+                        msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
+                    else:
+                        msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
+                msg = _["ustats_2"].format(tot, tota, limit) + msg
+                return videoid, msg
+
+            try:
+                videoid, msg = await loop.run_in_executor(
+                    None, get_stats
                 )
-            if not results:
-                return await m.edit(_["ustats_1"])
-            tota = 0
-            for vidid, count in list_arranged.items():
-                tota += count
-                if limit > 9:
-                    continue
-                if limit == 0:
-                    thumbnail = await YouTube.thumbnail(vidid, True)
-                limit += 1
-                details = stats.get(vidid)
-                title = (details["title"][:35]).title()
-                if vidid == "telegram":
-                    msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
-                else:
-                    msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
+            except Exception as e:
+                print(e)
+                return
+            thumbnail = await YouTube.thumbnail(videoid, True)
             await m.delete()
-            msg = _["ustats_2"].format(tot, tota, tracks) + msg
             await message.reply_photo(photo=thumbnail, caption=msg)
             return
         if name[0:3] == "sud":
@@ -124,7 +139,7 @@ async def start_comm(client, message: Message, _):
             searched_text = f"""
 🔍__**Video Track Information**__
 
-🏷**Title:** {title}
+❇️**Title:** {title}
 
 ⏳**Duration:** {duration} Mins
 👀**Views:** `{views}`
@@ -167,7 +182,7 @@ async def start_comm(client, message: Message, _):
             OWNER = OWNER_ID[0]
         except:
             OWNER = None
-        out = private_panel(_, app.username)
+        out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
                 await message.reply_photo(
@@ -202,7 +217,7 @@ async def start_comm(client, message: Message, _):
     & ~filters.edited
     & ~BANNED_USERS
 )
-@language
+@LanguageStart
 async def testbot(client, message: Message, _):
     out = start_pannel(_)
     return await message.reply_text(
@@ -236,6 +251,13 @@ async def welcome(client, message: Message):
                 if chat_type != "supergroup":
                     await message.reply_text(_["start_6"])
                     return await app.leave_chat(message.chat.id)
+                if chat_id in await blacklisted_chats():
+                    await message.reply_text(
+                        _["start_7"].format(
+                            f"https://t.me/{app.username}?start=sudolist"
+                        )
+                    )
+                    return await app.leave_chat(chat_id)
                 userbot = await get_assistant(message.chat.id)
                 out = start_pannel(_)
                 await message.reply_text(
