@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import os
 from random import randint
 from typing import Union
@@ -14,7 +23,7 @@ from XMusic.utils.database import (add_active_chat,
                                    is_video_allowed, music_on)
 from XMusic.utils.exceptions import AssistantErr
 from XMusic.utils.inline.play import (stream_markup,
-                                      telegram_markup)
+                                          telegram_markup)
 from XMusic.utils.inline.playlist import close_markup
 from XMusic.utils.pastebin import Xbin
 from XMusic.utils.stream.queue import put_queue, put_queue_index
@@ -32,10 +41,15 @@ async def stream(
     video: Union[bool, str] = None,
     streamtype: Union[bool, str] = None,
     spotify: Union[bool, str] = None,
+    forceplay: Union[bool, str] = None,
 ):
+    if not result:
+        return
     if video:
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_6"])
+    if forceplay:
+        await XMusic.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -75,7 +89,8 @@ async def stream(
                 msg += f"{count}- {title[:70]}\n"
                 msg += f"{_['playlist_17']} {position}\n\n"
             else:
-                db[chat_id] = []
+                if not forceplay:
+                    db[chat_id] = []
                 status = True if video else None
                 try:
                     file_path, direct = await YouTube.download(
@@ -98,6 +113,7 @@ async def stream(
                     vidid,
                     user_id,
                     "video" if video else "audio",
+                    forceplay=forceplay,
                 )
                 if video:
                     await add_active_video_chat(chat_id)
@@ -163,7 +179,8 @@ async def stream(
                 ),
             )
         else:
-            db[chat_id] = []
+            if not forceplay:
+                db[chat_id] = []
             await XMusic.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
@@ -178,6 +195,7 @@ async def stream(
                 vidid,
                 user_id,
                 "video" if video else "audio",
+                forceplay=forceplay,
             )
             if video:
                 await add_active_video_chat(chat_id)
@@ -217,7 +235,8 @@ async def stream(
                 ),
             )
         else:
-            db[chat_id] = []
+            if not forceplay:
+                db[chat_id] = []
             await XMusic.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
@@ -231,6 +250,7 @@ async def stream(
                 streamtype,
                 user_id,
                 "audio",
+                forceplay=forceplay,
             )
             if video:
                 await add_active_video_chat(chat_id)
@@ -271,7 +291,8 @@ async def stream(
                 ),
             )
         else:
-            db[chat_id] = []
+            if not forceplay:
+                db[chat_id] = []
             await XMusic.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
@@ -286,6 +307,7 @@ async def stream(
                 streamtype,
                 user_id,
                 "video" if video else "audio",
+                forceplay=forceplay,
             )
             if video:
                 await add_active_video_chat(chat_id)
@@ -327,7 +349,8 @@ async def stream(
                 ),
             )
         else:
-            db[chat_id] = []
+            if not forceplay:
+                db[chat_id] = []
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
@@ -345,6 +368,7 @@ async def stream(
                 vidid,
                 user_id,
                 "video" if video else "audio",
+                forceplay=forceplay,
             )
             if video:
                 await add_active_video_chat(chat_id)
@@ -382,7 +406,8 @@ async def stream(
                 )
             )
         else:
-            db[chat_id] = []
+            if not forceplay:
+                db[chat_id] = []
             await XMusic.join_call(
                 chat_id, original_chat_id, link, video=True
             )
@@ -396,6 +421,7 @@ async def stream(
                 user_name,
                 link,
                 "video",
+                forceplay=forceplay,
             )
             await add_active_video_chat(chat_id)
             await music_on(chat_id)
