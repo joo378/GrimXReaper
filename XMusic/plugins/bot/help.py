@@ -9,9 +9,10 @@ from XMusic import app
 from XMusic.misc import SUDOERS
 from XMusic.utils import help_pannel
 from XMusic.utils.database import get_lang, is_commanddelete_on
-from XMusic.utils.decorators.language import language, languageCB
+from XMusic.utils.decorators.language import (LanguageStart,
+                                              languageCB)
 from XMusic.utils.inline.help import (help_back_markup,
-                                          private_help_panel)
+                                      private_help_panel)
 
 ### Command
 HELP_COMMAND = get_command("HELP_COMMAND")
@@ -67,7 +68,7 @@ async def helper_private(
     & ~filters.edited
     & ~BANNED_USERS
 )
-@language
+@LanguageStart
 async def help_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
     await message.reply_text(
