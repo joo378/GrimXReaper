@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import os
 from random import randint
 from typing import Union
@@ -23,7 +14,7 @@ from XMusic.utils.database import (add_active_chat,
                                    is_video_allowed, music_on)
 from XMusic.utils.exceptions import AssistantErr
 from XMusic.utils.inline.play import (stream_markup,
-                                          telegram_markup)
+                                      telegram_markup)
 from XMusic.utils.inline.playlist import close_markup
 from XMusic.utils.pastebin import Xbin
 from XMusic.utils.stream.queue import put_queue, put_queue_index
