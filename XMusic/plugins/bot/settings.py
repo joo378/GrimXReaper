@@ -8,30 +8,27 @@ from config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
 from strings import get_command
 from XMusic import app
 from XMusic.utils.database import (add_nonadmin_chat,
-                                       cleanmode_off, cleanmode_on,
-                                       commanddelete_off,
-                                       commanddelete_on,
-                                       get_aud_bit_name, get_authuser,
-                                       get_authuser_names,
-                                       get_chatmode, get_cmode,
-                                       get_playmode, get_playtype,
-                                       get_vid_bit_name,
-                                       is_active_chat,
-                                       is_cleanmode_on,
-                                       is_commanddelete_on,
-                                       is_nonadmin_chat,
-                                       remove_nonadmin_chat,
-                                       save_audio_bitrate,
-                                       save_video_bitrate,
-                                       set_chatmode, set_playmode,
-                                       set_playtype)
+                                   cleanmode_off, cleanmode_on,
+                                   commanddelete_off,
+                                   commanddelete_on,
+                                   get_aud_bit_name, get_authuser,
+                                   get_authuser_names,
+                                   get_playmode, get_playtype,
+                                   get_vid_bit_name,
+                                   is_cleanmode_on,
+                                   is_commanddelete_on,
+                                   is_nonadmin_chat,
+                                   remove_nonadmin_chat,
+                                   save_audio_bitrate,
+                                   save_video_bitrate,
+                                   set_playmode, set_playtype)
 from XMusic.utils.decorators.admins import ActualAdminCB
 from XMusic.utils.decorators.language import language, languageCB
 from XMusic.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from XMusic.utils.inline.start import private_panel
+from YukkiMusic.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
@@ -212,8 +209,10 @@ async def without_Admin_rights(client, CallbackQuery, _):
             Direct = True
         else:
             Direct = None
-        chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-        if chatmode == "Group":
+        is_non_admin = await is_nonadmin_chat(
+            CallbackQuery.message.chat.id
+        )
+        if not is_non_admin:
             Group = True
         else:
             Group = None
@@ -302,44 +301,15 @@ async def aud_vid_cb(client, CallbackQuery, _):
 async def playmode_ans(client, CallbackQuery, _):
     command = CallbackQuery.matches[0].group(1)
     if command == "CHANNELMODECHANGE":
-        cmode = await get_cmode(CallbackQuery.message.chat.id)
-        if cmode is None:
-            try:
-                return await CallbackQuery.answer(
-                    _["setting_12"], show_alert=True
-                )
-            except:
-                return
-        try:
-            await app.get_chat(cmode)
-        except:
-            try:
-                return await CallbackQuery.answer(
-                    _["setting_15"], show_alert=True
-                )
-            except:
-                return
-        if await is_active_chat(CallbackQuery.message.chat.id):
-            try:
-                return await CallbackQuery.answer(
-                    _["setting_13"], show_alert=True
-                )
-            except:
-                return
-        try:
-            await CallbackQuery.answer(_["set_cb_6"], show_alert=True)
-        except:
-            pass
-        chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-        if chatmode == "Group":
-            await set_chatmode(
-                CallbackQuery.message.chat.id, "Channel"
-            )
+        is_non_admin = await is_nonadmin_chat(
+            CallbackQuery.message.chat.id
+        )
+        if not is_non_admin:
+            await add_nonadmin_chat(CallbackQuery.message.chat.id)
             Group = None
         else:
-            await set_chatmode(CallbackQuery.message.chat.id, "Group")
+            await remove_nonadmin_chat(CallbackQuery.message.chat.id)
             Group = True
-            buttons = playmode_users_markup(_, True)
         playmode = await get_playmode(CallbackQuery.message.chat.id)
         if playmode == "Direct":
             Direct = True
@@ -367,8 +337,10 @@ async def playmode_ans(client, CallbackQuery, _):
                 CallbackQuery.message.chat.id, "Direct"
             )
             Direct = True
-        chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-        if chatmode == "Group":
+        is_non_admin = await is_nonadmin_chat(
+            CallbackQuery.message.chat.id
+        )
+        if not is_non_admin:
             Group = True
         else:
             Group = None
@@ -397,8 +369,10 @@ async def playmode_ans(client, CallbackQuery, _):
             Direct = True
         else:
             Direct = None
-        chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-        if chatmode == "Group":
+        is_non_admin = await is_nonadmin_chat(
+            CallbackQuery.message.chat.id
+        )
+        if not is_non_admin:
             Group = True
         else:
             Group = None
