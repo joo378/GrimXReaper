@@ -209,7 +209,9 @@ def playmode_users_markup(
         ],
         [
             InlineKeyboardButton(
-                text=_["ST_B_16"] if Playtype == True else _["ST_B_17"],
+                text=_["ST_B_16"]
+                if Playtype == True
+                else _["ST_B_17"],
                 callback_data="PLAYTYPECHANGE",
             ),
         ],
