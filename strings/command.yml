@@ -1,4 +1,4 @@
-# Perintah di Setiap Bahasa
+# Commands in Every Language
 
 # Bot Commands
 PING_COMMAND : ["ping"]
@@ -6,14 +6,15 @@ START_COMMAND : ["start"]
 HELP_COMMAND : ["help"]
 SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
+GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["lang", "language"]
+LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "playforce", "vplayforce", "cplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
-STREAM_COMMAND : ["stream", "cstream"]
+STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
@@ -21,7 +22,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 
 # Tools
-QUEUE_COMMAND : ["queue", "cqueue"]
+QUEUE_COMMAND : ["queue","cqueue"]
 SONG_COMMAND : ["song", "video"]
 LYRICS_COMMAND : ["lyrics"]
 
@@ -52,7 +53,7 @@ BROADCAST_COMMAND : ["broadcast"]
 
 #Blacklist chat
 BLACKLISTCHAT_COMMAND : ["blacklistchat"]
-WHITELISTCHAT_COMMAND : ["whitelist"]
+WHITELISTCHAT_COMMAND : ["whitelistchat"]
 BLACKLISTEDCHAT_COMMAND : ["blacklistedchat"]
 
 # Video Calls Command
@@ -69,6 +70,8 @@ GETVAR_COMMAND : ["get_var"]
 DELVAR_COMMAND : ["del_var"]
 SETVAR_COMMAND : ["set_var"]
 USAGE_COMMAND : ["usage"]
+VARS_COMMAND : ["vars", "config"]
+
 
 #Basic Bot Commands
 UPDATE_COMMAND : ["update"]
