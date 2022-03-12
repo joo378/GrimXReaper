@@ -8,7 +8,6 @@ from XMusic.utils.formatters import seconds_to_min
 
 class SoundAPI:
     def __init__(self):
-        self.regex = r"^(https:\/\/soundcloud.com\/)(.*)$"
         self.opts = {
             "outtmpl": "downloads/%(id)s.%(ext)s",
             "format": "best",
@@ -18,7 +17,7 @@ class SoundAPI:
         }
 
     async def valid(self, link: str):
-        if re.search(self.regex, link):
+        if "soundcloud" in link:
             return True
         else:
             return False
