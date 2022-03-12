@@ -16,7 +16,7 @@ from XMusic.plugins.sudo.sudoers import sudoers_list
 from XMusic.utils.database import (add_served_chat, add_served_user,
                                    get_assistant, get_lang, get_userss,
                                    is_on_off, is_served_private_chat)
-from XMusic.utils.decorators.language import language
+from XMusic.utils.decorators.language import LanguageStart
 from XMusic.utils.inline import (help_pannel, 
                                  private_panel, 
                                  start_pannel)
