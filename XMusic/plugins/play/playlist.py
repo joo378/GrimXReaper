@@ -1,4 +1,4 @@
-Mimport os
+import os
 from random import randint
 
 from pykeyboard import InlineKeyboard
