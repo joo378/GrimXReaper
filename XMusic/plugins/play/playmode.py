@@ -23,9 +23,9 @@ PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
 async def playmode_(client, message: Message, _):
     playmode = await get_playmode(message.chat.id)
     if playmode == "Direct":
-        Direct = None
-    else:
         Direct = True
+    else:
+        Direct = None
     is_non_admin = await is_nonadmin_chat(message.chat.id)
     if not is_non_admin:
         Group = True
