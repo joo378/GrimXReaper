@@ -378,7 +378,7 @@ async def play_commnd(
         except Exception:
             return await mystic.edit_text(_["play_3"])
         streamtype = "youtube"
-    if str(playmode) == "Inline":
+    if str(playmode) == "Direct":
         if not plist_type:
             if details["duration_min"]:
                 duration_sec = time_to_seconds(
