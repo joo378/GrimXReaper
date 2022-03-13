@@ -25,7 +25,7 @@ async def playmode_(client, message: Message, _):
     if playmode == "Inline":
         Inline = True
     else:
-        Inline = None
+        Inline = True
     is_non_admin = await is_nonadmin_chat(message.chat.id)
     if not is_non_admin:
         Group = True
