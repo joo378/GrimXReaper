@@ -1,8 +1,8 @@
 {
-    "name": "Kay X Music",
+    "name": "Grim X Reaper",
     "description": "Telegram Group Calls streaming bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.",
-    "repository": "https://github.com/Kayzyu/KayXMusic",
-    "logo": "https://telegra.ph/file/4c77731a232ec4fff41cb.jpg",
+    "repository": "https://github.com/joo378/GrimXReaper",
+    "logo": "https://telegra.ph/file/8a0c480cf8b0ede24f5f0.jpg",
     "keywords": ["python3", "telegram", "bot", "Kayzyu", "KayXMusic", "telegram-bot", "pyrogram"],
     "stack": "container",
     "env": {
@@ -48,7 +48,7 @@
       },
       "START_IMG_URL": {
         "description": "Foto Untuk Start di bot Contoh: https://telegra.ph/file/.",
-        "value": "https://telegra.ph/file/6e824ff3944d394e58860.jpg",
+        "value": "https://telegra.ph/file/8a0c480cf8b0ede24f5f0.jpg",
         "required": false
       },
       "HEROKU_API_KEY": {
@@ -68,7 +68,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "Jika Anda tidak tahu ini, Biarkan apa adanya",
-        "value": "https://github.com/Kayzyu/KayXMusic",
+        "value": "https://github.com/joo378/GrimXReaper",
         "required": true
       },
       "UPSTREAM_BRANCH": {
