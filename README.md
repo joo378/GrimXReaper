@@ -49,7 +49,7 @@
 
  Klik tombol di bawah untuk Deploy KayXMusic di Heroku!
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Kayzyu/KayXMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="250" height="40.00" /></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/joo378/GrimXReaper"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="250" height="40.00" /></a></p>
 
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=S2F5enl1L0theVhNdXNpYyBtYWlu"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
