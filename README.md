@@ -1,10 +1,10 @@
  ###          *Grim X Reaper*
 
- <p align="center"><img src="https://telegra.ph/file/4c77731a232ec4fff41cb.jpg">
+ <p align="center"><img src="https://telegra.ph/file/f42533558655e6c1accc8.jpg">
  </p>
  
 
- [Kay X Music](https://github.com/Kayzyu/KayXMusic) Bot streaming Telegram Group Calls dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls.  Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.
+ [Grim X Reaper](https://github.com/joo378/GrimXReaper) Bot streaming Telegram Group Calls dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls.  Platform pendukung seperti Tautan Youtube, Spotify, Resso, AppleMusic, Soundcloud, dan M3u8.
 
  * Ditulis dari awal, membuatnya stabil dan lebih sedikit crash.
  * Thumbnail, font, dan gambar yang menarik, menjadikan pengalaman lebih ramah pengguna dan interaktif.
@@ -15,19 +15,19 @@
 
  # Umum
 
- Berikut adalah ikhtisar tingkat tinggi singkat dari Kay X Music:
+ Berikut adalah ikhtisar tingkat tinggi singkat dari Grim X Reaper:
 
  Proyek ini didasarkan pada [Pyrogram](https://github.com/pyrogram) dan [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls) .  Pyrogram adalah framework MTProto API yang modern, elegan, dan asinkron.
 
- * Untuk database, Kayzyu menggunakan MongoDB untuk menyimpan data dan kunci.  [MongoDB](https://www.mongodb.com/) adalah database dokumen dengan skalabilitas dan fleksibilitas yang Anda inginkan dengan kueri dan pengindeksan yang Anda butuhkan.
+ * Untuk database, Grim menggunakan MongoDB untuk menyimpan data dan kunci.  [MongoDB](https://www.mongodb.com/) adalah database dokumen dengan skalabilitas dan fleksibilitas yang Anda inginkan dengan kueri dan pengindeksan yang Anda butuhkan.
  * Proyek menggunakan scrapping web bs4 untuk mendapatkan banyak detail platform.  [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) adalah library Python untuk menarik data dari file HTML dan XML.
  * Proyek menggunakan font [Poppins](../assets/font.ttf) sebagai font utama untuk thumbnail.
  * Proyek menggunakan gambar dan ikon menarik yang bisa Anda dapatkan di direktori [assets](../assets/).
 
- ### Sebelum menggunakan Kay X Music , harap lihat [semua konfigurasi yang tersedia](../config/README.md) , juga periksa [semua perintah yang tersedia](../strings/command.yml) dari  proyek.
+ ### Sebelum menggunakan Grim X Reaper , harap lihat [semua konfigurasi yang tersedia](../config/README.md) , juga periksa [semua perintah yang tersedia](../strings/command.yml) dari  proyek.
 
- > Jika Anda ingin mulai bekerja dengan Kay X Music, Anda dapat melakukan fork atau mengimpor repo.
- > Jika Anda ingin berbicara dengan kami, bergabunglah dengan kami di [Grup Telegram](https://t.me/KayzuSupport) kami
+ > Jika Anda ingin mulai bekerja dengan Gr X Reaper, Anda dapat melakukan fork atau mengimpor repo.
+ > Jika Anda ingin berbicara dengan kami, bergabunglah dengan kami di [Grup Telegram](https://t.me/JoniSupport) kami
 
  ## Prasyarat
 
